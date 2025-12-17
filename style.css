@@ -211,3 +211,10 @@ input:focus,select:focus,textarea:focus{
     justify-content: center;
   }
 }
+.desktop-only{display:inline;}
+.mobile-only{display:none;}
+
+@media (max-width: 720px){
+  .desktop-only{display:none;}
+  .mobile-only{display:inline;}
+}
