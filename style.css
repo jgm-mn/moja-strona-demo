@@ -268,3 +268,4 @@ input:focus,select:focus,textarea:focus{
 }
 
 .modal__btn{width:100%; justify-content:center;}
+body{ outline: 5px solid red; }
