@@ -192,3 +192,22 @@ input:focus,select:focus,textarea:focus{
   .pricing{grid-template-columns:1fr}
   .form-grid{grid-template-columns:1fr}
 }
+@media (max-width: 720px) {
+  .topbar-inner{
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .nav{
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  /* przycisk w menu na mobile jako pełna szerokość */
+  .nav .btn.primary{
+    width: 100%;
+    justify-content: center;
+  }
+}
