@@ -224,6 +224,12 @@
               <label>Usługi / oferta</label>
               <textarea name="Oferta" placeholder="np. • montaż • awarie • wyceny"></textarea>
             </div>
+            <div class="field full">
+  <label>Preferencje wizualne (styl strony)</label>
+  <textarea name="Preferencje wizualne"
+    placeholder="Np. kolory: zielony + biel, styl: nowoczesny / ciepły / minimalistyczny. Możesz wkleić linki do stron, które Ci się podobają."></textarea>
+  <div class="hint">Im więcej szczegółów, tym lepiej trafimy w klimat.</div>
+</div>
 
             <div class="field">
               <label>Link do Facebooka</label>
@@ -279,5 +285,16 @@
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+  <div id="thankModal" class="modal" aria-hidden="true">
+  <div class="modal__overlay" data-close></div>
+  <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <h3 id="modalTitle">Dziękujemy!</h3>
+    <p id="modalText">
+      Dziękujemy za wypełnienie formularza, otrzymasz projekt twojej strony na adres email który podałeś w formularzu.
+      Dziękujemy, że wybrałeś Sąsiedzką Stronę!
+    </p>
+    <button class="btn primary modal__btn" type="button" data-close>OK</button>
+  </div>
+</div>
 </body>
 </html>
