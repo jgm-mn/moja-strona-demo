@@ -271,3 +271,53 @@ input:focus,select:focus,textarea:focus{
 hr { display: none !important; }
 .section { border-top: none !important; outline: none !important; }
 <link rel="stylesheet" href="style.css?v=3">
+/* --- zamienniki zaznaczonych elementów --- */
+.benefits-grid{
+  margin-top:14px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+}
+.benefit{
+  display:flex;
+  gap:10px;
+  align-items:flex-start;
+  padding:12px;
+  border:1px solid var(--line);
+  border-radius:16px;
+  background:rgba(255,255,255,.72);
+  box-shadow:0 10px 26px rgba(31,41,55,.06);
+}
+.benefit-ico{
+  width:34px;height:34px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:12px;
+  background:rgba(31,167,160,.10);
+  border:1px solid rgba(31,167,160,.18);
+}
+
+.trust{ display:flex; flex-direction:column; gap:12px; }
+.trust-card h3{ margin:10px 0 8px; font-family:Nunito, sans-serif; }
+.trust-badge{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:8px 12px; border-radius:999px;
+  background:rgba(31,167,160,.10);
+  border:1px solid rgba(31,167,160,.18);
+  font-weight:800; font-size:13px;
+}
+.trust-list{ margin:10px 0 0; padding-left:18px; color:var(--muted); line-height:1.6; }
+.trust-list li{ margin:6px 0; }
+
+.trust-quotes{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+.quote{ padding:16px; }
+.quote-stars{ font-weight:900; letter-spacing:.5px; margin-bottom:6px; }
+
+/* responsywność */
+@media (max-width: 920px){
+  .benefits-grid{ grid-template-columns:1fr; }
+  .trust-quotes{ grid-template-columns:1fr; }
+}
