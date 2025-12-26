@@ -280,13 +280,18 @@ hr { display: none !important; }
 }
 .benefit{
   display:flex;
-  gap:10px;
-  align-items:flex-start;
+  gap:12px;
+  align-items:center;
+  justify-content:space-between;
   padding:12px;
   border:1px solid var(--line);
   border-radius:16px;
   background:rgba(255,255,255,.72);
   box-shadow:0 10px 26px rgba(31,41,55,.06);
+}
+
+.benefit-text{ min-width:0; }
+.benefit-text b{ display:block; margin-bottom:2px; }
 }
 .benefit-ico{
   width:34px;height:34px;
@@ -321,3 +326,23 @@ hr { display: none !important; }
   .benefits-grid{ grid-template-columns:1fr; }
   .trust-quotes{ grid-template-columns:1fr; }
 }
+/* --- opinie w ramce --- */
+.quotes-card{ padding:16px; }
+.quotes-head{
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+  margin-bottom:10px;
+}
+.quotes-list{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.quote-item{
+  padding:12px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:rgba(255,255,255,.78);
+}
+.quote-item p{ margin:0 0 6px; }
