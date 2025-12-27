@@ -367,3 +367,19 @@ hr { display: none !important; }
   padding-left: 18px;  /* kontroluje odsunięcie wypunktowania */
   margin-left: 0;
 }
+/* Kafelek "Co dostajesz w pakiecie?" – równo w białej ramce */
+.package-card{
+  padding: 22px 26px !important; /* równo lewo/prawo */
+  box-sizing: border-box;
+}
+
+/* lista bez dziwnych wcięć */
+.package-card ul{
+  margin: 12px 0 0;
+  padding-left: 20px;           /* kontrolowane wcięcie kropek */
+}
+
+/* delikatne odstępy między punktami */
+.package-card li{
+  margin: 10px 0;
+}
