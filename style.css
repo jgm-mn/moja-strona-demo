@@ -356,3 +356,14 @@ hr { display: none !important; }
   max-width: 100%;
   box-sizing: border-box;
 }
+/* "Co dostajesz w pakiecie?" – przesuń zawartość w prawo */
+.package-card{
+  padding-left: 26px;  /* było np. 18px/20px — zwiększ/zmniejsz według uznania */
+  padding-right: 22px;
+}
+
+/* żeby kropki listy nie wchodziły na ramkę */
+.package-card ul{
+  padding-left: 18px;  /* kontroluje odsunięcie wypunktowania */
+  margin-left: 0;
+}
