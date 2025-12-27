@@ -346,3 +346,6 @@ hr { display: none !important; }
   background:rgba(255,255,255,.78);
 }
 .quote-item p{ margin:0 0 6px; }
+.benefits{
+  margin-top: 18px;
+}
