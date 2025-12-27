@@ -378,3 +378,26 @@ hr { display: none !important; }
   margin: 10px 0;
 }
 .package-card{ margin-left: 0 !important; }
+/* Prawy kafel "Co dostajesz w pakiecie?" – równe paddingi i nic nie wystaje */
+.proof-card{
+  padding: 22px 26px !important;
+  box-sizing: border-box;
+  overflow: hidden; /* ucina wszystko co próbuje wyjść poza ramkę */
+}
+
+/* Lista bez dziwnych wcięć z przeglądarki */
+.proof-card ul{
+  margin: 12px 0 0;
+  padding-left: 20px;   /* kontrolowane wcięcie kropek */
+}
+
+/* Odstępy między punktami */
+.proof-card li{
+  margin: 10px 0;
+}
+
+/* Żeby przycisk nie "rozpychał" ramki */
+.proof-card .btn{
+  width: 100%;
+  box-sizing: border-box;
+}
