@@ -401,3 +401,29 @@ hr { display: none !important; }
   width: 100%;
   box-sizing: border-box;
 }
+/* Jedna ramka dla całej sekcji "Co dostajesz w pakiecie?" */
+.card-package-card{
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  padding: 18px;
+}
+
+/* Usuń ramki/cienie z elementów wewnątrz, żeby nie robiły "kart w karcie" */
+.card-package-card .trust-card,
+.card-package-card .quotes-card,
+.card-package-card .card{
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Daj trochę oddechu pomiędzy listą a opiniami */
+.card-package-card .quotes-card{
+  margin-top: 14px !important;
+  padding-top: 14px !important;
+  border-top: 1px solid rgba(0,0,0,.08) !important;
+}
