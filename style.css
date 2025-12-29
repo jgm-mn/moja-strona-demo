@@ -392,12 +392,12 @@ hr { display: none !important; }
 }
 
 /* Odstępy między punktami */
-.proof-card li{
+.trust-list li{
   margin: 10px 0;
 }
 
 /* Żeby przycisk nie "rozpychał" ramki */
-.proof-card .btn{
+.trust-list .btn{
   width: 100%;
   box-sizing: border-box;
 }
